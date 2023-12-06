@@ -2,7 +2,9 @@
 RESTful API for managing a library system. The API interacts with a SQLite database and performs the following CRUD operations:
 1. Retrieves all books. (Endpoint: ``` GET /api/books ```) 
 2. Adds a new book to the library. (Endpoint: ``` POST /api/books ```)
-3. Updates book details for a book inputted by the user. The request body should be JSON object with "author", "book_id" and "name" keys. (Endpoint: ```PUT /api/books/{id}```)
+3. Updates book details for a book inputted by the user. (Endpoint: ```PUT /api/books/{id}```)
+
+The request body for the POST and PUT requests should be JSON objects with "author", "book_id" and "name" keys. 
 
 
 ## Running the code locally on your system:
